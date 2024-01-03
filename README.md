@@ -1,6 +1,6 @@
-# Notes APP
+# Notes App
 
-The Notes APP is a simple RESTful API built with Node.js, Express.js, and MongoDB. It allows users to create, read, update, and delete notes. Additionally, users can sign up and login to access protected routes.
+The Notes-App is a simple RESTful API built with Node.js, Express.js, and MongoDB. It allows users to create, read, update, and delete notes. Additionally, users can sign up and login to access protected routes.
 
 ## Table of Contents
 
@@ -15,8 +15,8 @@ The Notes APP is a simple RESTful API built with Node.js, Express.js, and MongoD
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/void-adarsh/NotesApp.git
-cd NotesApp
+git clone https://github.com/void-adarsh/Notes-App.git
+cd Notes-App
 ```
 
 2. Install Dependencies:
@@ -26,16 +26,16 @@ npm install
 ```
 
 - In this project I have used multiple dependencies which are as follows:
-  `Bcrypt` - Library for hashing passwords to securely store them in the database.
-  `Jest` - Testing framework for writing unit tests.
-  `Supertest` - Library for testing HTTP requests/responses in combination with Jest.
-  `Mongoose` - MongoDB object modeling tool to interact with the database.
-  `JsonWebToken` - For implementing an authentication protocol using JSON Web Tokens.
-  `nodemon` - Utility to monitor changes in the code and automatically restart the server during development.
-  `express` - Web application framework for building APIs and server-side applications.
-  `express-rate-limit` - Web application framework for building APIs and server-side applications.
-  `dotenv` - Library to load environment variables from a .env file.
-  `cors` - Middleware for enabling Cross-Origin Resource Sharing to allow requests from different origins.
+  - `Bcrypt` - Library for hashing passwords to securely store them in the database.
+  - `Jest` - Testing framework for writing unit tests.
+  - `Supertest` - Library for testing HTTP requests/responses in combination with Jest.
+  - `Mongoose` - MongoDB object modeling tool to interact with the database.
+  - `JsonWebToken` - For implementing an authentication protocol using JSON Web Tokens.
+  - `nodemon` - Utility to monitor changes in the code and automatically restart the server during development.
+  - `express` - Web application framework for building APIs and server-side applications.
+  - `express-rate-limit` - Web application framework for building APIs and server-side applications.
+  - `dotenv` - Library to load environment variables from a .env file.
+  - `cors` - Middleware for enabling Cross-Origin Resource Sharing to allow requests from different origins.
 
 3. Setup MongoDB
 
@@ -47,7 +47,6 @@ npm install
    ` SECRET_KEY=notesapi`
 
 - Replace ` your-mongodb-uri` with the MongoDB connection URI, and ` your_secret_key` with a secret key for JWT authentication.
--
 
 ## Usage
 
@@ -72,8 +71,9 @@ The server will run on http://localhost:5000.
     POST /api/notes/:id/share: share a note with another user (requires authentication).
     GET /api/search?q=:query: search for notes based on keywords (requires authentication).
 ```
-- ``` For API Endpoint testing I have used POSTMAN```
-  
+
+- ` For API Endpoint testing I have used POSTMAN`
+
 ## Testing
 
 To run the unit tests for the application, use the following command:
